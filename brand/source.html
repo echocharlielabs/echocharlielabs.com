@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+<style>
+  body{margin:0;background:#fff;font-family:"Newsreader",Georgia,serif}
+  .tile{width:1024px;height:1024px;background:#14201A;position:relative;display:grid;place-items:center;overflow:hidden}
+  .tile .ec{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:600px;letter-spacing:-0.035em;line-height:1;transform:translateY(-3%)}
+  .tile.green .ec{color:#2A8A63}
+  .tile.paper .ec{color:#F7F5F0}
+  .tile .rule{position:absolute;left:50%;transform:translateX(-50%);bottom:172px;width:170px;height:8px;background:#1F6B4A;border-radius:4px}
+  .tile.paper .rule{background:#2A8A63}
+  .tile.framed::after{content:"";position:absolute;inset:44px;border:5px solid #1F6B4A;border-radius:6px;opacity:.85}
+  .word{width:1600px;height:400px;background:#14201A;display:flex;align-items:center;gap:56px;padding:0 96px;box-sizing:border-box}
+  .word .box{width:200px;height:200px;background:#1F6B4A;border-radius:44px;display:grid;place-items:center;color:#F7F5F0;font-weight:500;font-size:118px;letter-spacing:-0.03em;flex:0 0 auto;line-height:1}
+  .word .t{color:#FFFFFF;font-weight:500;font-size:150px;letter-spacing:-0.02em;line-height:1;white-space:nowrap}
+  .word .t span{display:block;color:#A9B6AC;font-size:44px;letter-spacing:.04em;margin-top:22px;font-family:"Newsreader",Georgia,serif}
+</style></head><body>
+<div id="green" class="tile green"><div class="ec">EC</div></div>
+<div id="paper" class="tile paper"><div class="ec">EC</div><div class="rule"></div></div>
+<div id="framed" class="tile paper framed"><div class="ec">EC</div></div>
+<div id="wordmark" class="word"><div class="box">EC</div><div class="t">Echo Charlie Labs<span>Software that reads the fine print.</span></div></div>
+</body></html>
